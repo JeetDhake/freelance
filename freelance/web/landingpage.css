@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+
+    align-items: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 1.5px solid rgb(0, 234, 242);
+    border-radius: 10px;
+    background: #fff;
+    height: 7%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    padding-bottom: 0.5px;
+    justify-content: space-between;
+
+}
+
+#navbar::before {
+
+    content: "";
+
+    box-shadow: 0 0 5px rgb(0, 247, 255);
+    position: absolute;
+
+    border-radius: 10px;
+    height: 7%;
+    width: 0%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+#logo {
+    margin: 10px 1px;
+
+
+
+}
+
+#logo img {
+    height: 42px;
+    margin: 4px 0px;
+    border-radius: 50px;
+
+}
+
+#logo img:hover {
+    color: #fff;
+    box-sizing: content-box;
+    background-color: transparent;
+
+    box-shadow: 0 0 0px rgb(0, 247, 255);
+}
+
+
+#navbar ul {
+    display: flex;
+
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+
+}
+
+#navbar ul li a {
+    color: rgb(139, 139, 139);
+    display: block;
+
+    padding: 3px 12px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+
+    box-sizing: content-box;
+    background-color: transparent;
+    outline: 1px solid rgb(0, 239, 247);
+
+}
+
+.logout-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(139, 139, 139);
+}
+
+.logout-btn:hover {
+    color: rgb(139, 139, 139);
+
+}
+
+.login-btn {
+    display: block;
+    align-self: center;
+    margin: 3px 9px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    color: #ffff;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    border: 1px solid rgb(0, 239, 247);
+    color: #000;
+    background: #fff;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 450;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+
+    position: absolute;
+
+
+    height: 105%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+#service {
+    margin: 45px;
+    position: relative;
+    top: -50;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+#service .box {
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.246);
+    padding: 40px 20px;
+    transition: transform 0.5s;
+
+    margin: 3px 9px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+#service .box:hover {
+    transform: translateY(-10px);
+}
+
+#service .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+.h-primary {
+    font-size: 3.0rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+
+
+
+    padding: 12px;
+    color: #fff;
+}
+
+.h2-primary {
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-align: center;
+
+
+    padding: 70px;
+    padding-bottom: 85px;
+    color: #fff;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 4px 12px;
+    border: 2px solid rgb(0, 247, 255);
+    background-color: #fff;
+
+    color: #000;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    color: #000;
+    box-shadow: 0 0 3px rgb(0, 247, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(194, 253, 255);
+
+
+}
+
+.center {
+    text-align: center;
+}
+
+
+footer {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 50px 100px 0px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+footer .container .sec {
+    margin-right: 0;
+    margin-left: 0;
+
+
+}
+
+footer .container .sec.aboutus {
+    width: 35%;
+    text-align: left;
+}
+
+footer .container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(0, 247, 255);
+}
+
+footer p {
+    color: #999;
+
+}
+
+footer p:hover {
+    color: #fff;
+
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.sic li {
+    list-style: none;
+
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+.sci li a:hover {
+    background: rgb(0, 247, 255);
+}
+
+.sci li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+    width: 30%;
+    text-align: left;
+}
+
+.quicklinks ul li {
+    list-style: none;
+
+
+}
+
+.quicklinks ul li a {
+    color: #999;
+
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+}
+
+.contact {
+    width: 25%;
+    margin-right: 0 !important;
+    text-align: left;
+
+}
+
+.contact .info {
+    position: relative;
+
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li span:hover {
+    color: #fff;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fff;
+}
+
+.copyrighttext {
+    width: auto;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container .sec.aboutus,
+    .quicklinks,
+    .contact {
+        width: 100%;
+    }
+
+    .copyrighttext {
+        padding: 8px 40px;
+
+    }
+}
