@@ -34,7 +34,7 @@ include('../web/connect.php');
                 <li class="item"><a href="#">business</a></li>
                 <li class="item"><a href="#">explore</a></li>
                 <li class="item"><a href="../web/becomeseller.php">seller account</a></li>
-                <li class="item"><a href="#">sign in</a></li>
+                <li class="item"><a href="../web/signin.php">sign in</a></li>
 
                 <li>
                     <a href="../web/logout.php" class="logout-btn">
@@ -53,7 +53,7 @@ include('../web/connect.php');
         <section id="home">
 
             <h1 class="h-primary">Lost And Found</h1>
-            <p>hey there! join now</p>
+            <p>hey there! Sign Up First</p>
             <p></p>
             <a href="../web/signin.php">
                 <button class="btn">Join Now</button>

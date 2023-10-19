@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $stmt = mysqli_prepare($con, $sql);
         if ($stmt) {
             mysqli_stmt_bind_param($stmt, "s", $param_username);
-            $param_username = trim($_post['username']);
+            $param_username = trim($_POST['username']);
 
             if (mysqli_stmt_execute($stmt)) {
                 mysqli_stmt_store_result($stmt);
@@ -48,7 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $param_password = password_hash($password, PASSWORD_DEFAULT);
 
             if (mysqli_stmt_execute($stmt)) {
-                header("location: ../web/landingpage.php");
+                header("location: ../web/becomeseller.php");
+                session_start();
+                        $_SESSION["username"] = $username;
+                        $_SESSION["id"] = $id;
+                        $_SESSION["loggedin"] = true;
             } else {
                 echo "<script>
                 alert('error')
