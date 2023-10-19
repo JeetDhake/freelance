@@ -32,6 +32,7 @@ if ($res > 0) {
   <meta charset="UTF-8">
   <link rel="stylesheet" href="seller.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/b9323f08fd.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>seller</title>
@@ -181,14 +182,14 @@ if ($res > 0) {
         </div>
         <img src="image/logo.png" alt="logo" class="logo">
         <ul>
-          <li><img src="image/about.png" alt="icon"></li>
-          <li><img src="image/about.png" alt="icon"></li>
-          <li><img src="image/about.png" alt="icon"></li>
+          <li><i class="fa-solid fa-house" style="color: #0009;"></i></li>
+          <li><i class="fa-regular fa-envelope" style="color: #0009;"></i></li>
+          <li><i class="fa-solid fa-tv" style="color: #0009;"></i></li>
         </ul>
       </div>
       <div class="nav-right">
         <div class="search-box">
-          <img src="image/about.png" alt="icon">
+        <i class="fa-solid fa-magnifying-glass" style="color: #0009;"></i>
           <input type="text" placeholder="search">
         </div>
         <div class="nav-user-icon online" onclick="settingmenutoggle()">

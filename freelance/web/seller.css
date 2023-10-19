@@ -363,7 +363,7 @@ nav {
 
 }
 
-.nav-left ul li img {
+.nav-left ul li i {
   width: 28px;
   margin: 0 15px;
 }
@@ -387,7 +387,7 @@ nav {
   padding: 0 15px;
 }
 
-.search-box img {
+.search-box i {
   width: 18px;
 
 }
