@@ -234,7 +234,7 @@ function viewgig()
             <p>Contact info:</p>
           </div>";
 
-      $unid =  $_SESSION['username'];
+      $unid =  $nm;
       $query = mysqli_query($con, "SELECT * FROM `signin` WHERE username='$unid'");
       $row = mysqli_fetch_array($query);
       $un = $row['username'];
