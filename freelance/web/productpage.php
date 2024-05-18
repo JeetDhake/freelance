@@ -2,10 +2,7 @@
 include('../web/connect.php');
 include('../web/common_function.php');
 
-session_start();
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-  header("location: login.php");
-}
+
 ?>
 
 
