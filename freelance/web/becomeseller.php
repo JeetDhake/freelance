@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
             echo "<script>
                 alert('user registered successfully')
               </script>";
-            header("location: seller.php");
+            header("location: payment.php");
         }
     }
 }

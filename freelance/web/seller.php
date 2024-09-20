@@ -14,7 +14,6 @@ $un = $row['username'];
 
 $squery = mysqli_query($con, "SELECT * FROM `seller` where username='$un'");
 $res = mysqli_num_rows($squery);
-
 if ($res > 0) {
   $row1 = mysqli_fetch_assoc($squery);
 }

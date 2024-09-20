@@ -61,6 +61,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
         mysqli_stmt_close($stmt);
     }
+    else{
+        if(!empty($username_err)){
+            echo "<script>
+            alert('$username_err')
+          </script>";
+        }
+        if(!empty($password_err)){
+            echo "<script>
+            alert('$password_err')
+          </script>";
+        }
+        
+    }
     mysqli_close($con);
 }
 ?>
