@@ -308,32 +308,6 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 400px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-
-  .sidebar {
-    width: 66px;
-  }
-
-  .sidebar.close {
-    width: 0;
-  }
-
-  .home-section {
-    left: 66px;
-    width: calc(100% - 66px);
-    z-index: 100;
-  }
-
-  .sidebar.close~.home-section {
-    width: 100%;
-    left: 0;
-  }
-}
-
-
 nav {
   display: flex;
   align-items: center;

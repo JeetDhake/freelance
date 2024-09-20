@@ -14,6 +14,7 @@ include('../web/common_function.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>buyer</title>
     <link rel="stylesheet" href="buyer.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
